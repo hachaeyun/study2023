@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* 지마켓산스 300 500 700*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+
+@font-face {
+    font-family: 'NotoSansThin';
+    src: url('../fonts/NotoSansKR-Thin.otf') format('opentype');
+    font-weight:100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NotoSansLight';
+    src: url('../fonts/NotoSansKR-Light.otf') format('opentype');
+    font-weight:300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NotoSansRegular';
+    src: url('../fonts/NotoSansKR-Regular.otf') format('opentype');
+    font-weight:400;
+    font-style:normal;
+}
+@font-face {
+    font-family:'NotoSansMedium';
+    src: url('../fonts/NotoSansKR-Medium.otf') format('opentype');
+    font-weight:500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NotoSansBold';
+    src: url('../fonts/NotoSansKR-Bold.otf') format('opentype');
+    font-weight:700;
+    font-style: normal;
+}
+@font-face {
+    font-family:'NotoSansBlack';
+    src: url('../fonts/NotoSansKR-Black.otf') format('opentype');
+    font-style: normal;
+}
+body { 
+    /* font-family: 'Noto Sans KR', sans-serif; */
+    overflow-x: hidden; overflow-y: auto; 
+	-webkit-overflow-scrolling: touch; -webkit-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -ms-text-size-adjust: 100%; 
+    word-break: keep-all; word-wrap: break-word; 
+}

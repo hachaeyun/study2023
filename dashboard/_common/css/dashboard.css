@@ -1,0 +1,101 @@
+
+
+/* s:contents */
+body {min-width:1200px;}
+.contents {width:100%; height:95vh; overflow: hidden;}
+.contents .inner {width:100%; height:100%; padding:110px 0 0 270px; overflow-y:scroll; }
+.contents .inner::after {content:initial;}
+/* lfBox */
+.contents .scroll {width:100%;}
+.contents .inner .lfBox {width:78%; margin-right:2%;}
+.contents .title {align-items:center;}
+.contents .title span {width:5px; height:5px; border-radius:50%; background-color:#000;}
+.contents .title h2 {font-family:'NotosansRegular'; font-size:18px; padding:0 16px 0 10px;}
+.contents .title p {font-family:'NotosansLight'; font-size:14px; color:#999999;}
+.contents .lfBox .topBox {margin:14px 0 32px 0; justify-content:space-between;}
+.contents .lfBox .topBox::after {content:initial;}
+.contents .lfBox .topBox .tabBtn {border:1px solid #dadada;}
+.contents .tabBtn {width:600px; justify-content:space-between; border-radius:6px; overflow:hidden;}
+.contents .tabBtn li {width:100%; height:50px; line-height:50px; text-align:center; background-color:#eeebfc; border-right:1px solid #dadada;}
+.contents .tabBtn li:hover {background-color:#e7e4f8; }
+.contents .tabBtn li:hover a {color:#000;}
+.contents .tabBtn li:last-child {border-right:0;}
+.contents .tabBtn li a {width:100%; height:100%; font-family:'NotoSansLight'; font-size:18px; color:#151531;}
+.contents .tabBtn li.active {background-color:var(--indigo); }
+.contents .tabBtn li.active a {color:#fff; font-family: 'NotoSansRegular';}
+.contents .tabBox {padding-bottom:50px;}
+.contents .tabBox >div {display:none;}
+.contents .tabBox >div.active {display:block;}
+.contents .tab table {width:100%; border-collapse: separate; border-spacing: 0 8px;}
+.contents .tab thead th {padding:0 20px 15px 20px;; margin-bottom:15px; font-family:'NotoSansMedium'; font-size:16px; color:#000; position:relative;  line-height:1;}
+.contents .tab thead th.top_name {text-align:left;}
+.contents .tab thead th.border::before {content:''; width:1px; height:13px; background-color:#cccccc; position:absolute; top:2px; left:0;}
+.contents .tab thead th.border::after {content:''; width:1px; height:13px; background-color:#cccccc; position:absolute; top:2px; right:0;}
+.contents .tab thead th.top_date {width:100px;}
+.contents .tab tbody tr {background-color:#fff; box-shadow:-1px 0px 4px rgba(0,0,0,0.2); border:1px solid #e9e9e9; }
+.contents .tab tbody td { cursor:pointer; text-align:center; padding:20px 0; font-family:'NotosansLight'; font-size:16px; letter-spacing:-0.6px;}
+.contents .tab tbody td:nth-child(2) {text-align:left;}
+.contents .tab tbody tr td:first-child { border-top-left-radius:6px; }
+.contents .tab tbody tr td:last-child { border-top-right-radius:6px; }
+.contents .tab tbody tr td:first-child { border-bottom-left-radius:6px; }
+.contents .tab tbody tr td:last-child { border-bottom-right-radius:6px; }
+.contents .tab tbody tr:first-child td { border-top-style: solid; }
+.contents .tab tbody tr td:first-child { border-left-style: solid; }
+.contents .tab tbody tr td:nth-child(2) {color:#151531;}
+.contents .tab tbody tr td:nth-child(3) { font-size:15px; color:#444444; padding:0 10px;}
+.contents .tab tbody tr td:nth-child(4) {font-size:15px; color:#444444; padding:0 10px;}
+.contents .tab tbody .check {width:25px; height:25px; background-color:#fff; border:1px solid var(--dark); border-radius:50%; cursor:pointer; margin:0 auto;}
+.contents .tab tbody .check.on {background-color:var(--dark);}
+.contents .tab tbody td .desc {font-family:'NotosansMedium'; font-size:16px; color:var(--dark);}
+.contents .tab tbody tr:hover {background-color:#f8f6ff;}
+.contents .tab tbody tr:hover td:nth-child(2) {font-family:'NotoSansRegular'; color:#000;}
+.contents .tab tbody tr:hover td .desc {font-weight:'NotosansBold';}
+.contents .searchBox {width:348px; height:50px; border-radius:6px; overflow:hidden; position:relative; box-shadow:3px 3px 12px 1px rgb(0, 0, 0, 0.15);}
+.contents .searchBox input {background-color:#565656; width:100%; height:100%; padding:0 20px; color:#f6f6f6;}
+.contents .searchBox input::placeholder {font-family:'NotosansLight'; font-size:16px; color:#fff; opacity:0.5;}
+.contents .searchBox input:focus {font-family:'NotosansMedium';  color:#f6f6f6;}
+.contents .searchBox button {position:absolute; right:15px; top:50%; transform:translateY(-50%); background-color:transparent; border:none;}
+.contents .searchBox button i {font-size:1.8em; font-weight:200; color:#fff;}
+/* rtBox */
+.contents .inner .rtBox {width:18%; height:auto; }
+.contents .inner .rtBox .topBox {padding:28px 20px 40px 20px; background-color:#eeebfc; border-top-left-radius:20px; border-top-right-radius:20px;} 
+.contents .inner .rtBox .userList {margin-top:15px;}
+.contents .inner .rtBox .userList dl {justify-content:space-between; padding:10px 0; border-bottom:1px solid #dadada; box-sizing:border-box;}
+.contents .inner .rtBox .userList dl dt {font-family:'NotosansRegular'; font-size:15px; color:#444444;}
+.contents .inner .rtBox .userList dl dd {font-family:'NotosansMedium'; font-size:14px; color:var(--dark);}
+.contents .inner .rtBox .bottomBox {background-color:#151531; height:88px; border-bottom-left-radius:20px; border-bottom-right-radius:20px; position:relative; }
+.contents .inner .rtBox .infoBox {margin:10px auto 18px auto;}
+.contents .inner .rtBox .infoBox a {display:block; width:100%; height:40px; line-height:40px; background-color:var(--dark); border-radius:6px; margin-bottom:2px; padding-left:18px; display:flex; flex-direction:row; align-items:center; font-family:'NotosansLight'; font-size:14px; color:#fff; position:relative; z-index:2; overflow:hidden;}
+.contents .inner .rtBox .infoBox a figure {line-height:1; margin-right:9px; display:inline-block;}
+.contents .inner .rtBox .infoBox a::after {content:''; position:absolute; top:0;left:0; width:0; height:100%; background-color:var(--indigo);}
+.contents .inner .rtBox .infoBox a:hover {background-color:transparent;}
+.contents .inner .rtBox .infoBox a:hover::after {width:100%; z-index:-1; transition:all 0.6s;}
+.contents .inner .rtBox .studyList { padding-top:15px; width:88%; margin:0 auto;}
+.contents .inner .rtBox .studyList dl {justify-content:space-between; padding-bottom:8px;}
+.contents .inner .rtBox .studyList dl:last-child {padding-bottom:0;}
+.contents .inner .rtBox .studyList dl dt {font-family:'NotosansRegular'; font-size:14px; color:#444444;}
+.contents .inner .rtBox .studyList dl dd {font-family:'NotosansMedium'; font-size:15px; color:#151531;}
+.contents .inner .rtBox .total {background-color:#fff; position:absolute; top:-15px; z-index:1; width:80%; left:50%; height:30px; line-height:28px; transform:translateX(-50%); justify-content:space-between; padding:0 18px; border-radius:15px;}
+.contents .inner .rtBox .total p {font-family:'NotosansRegular'; font-size:14px; color:#151531;}
+.contents .inner .rtBox .total strong {font-family:'NotosansMedium'; font-size:18px; color:var(--dark);}
+.contents .inner .rtBox .result {width:70%; margin:0 auto; padding-top:25px; display:flex; flex-direction:row; justify-content:space-between;}
+.contents .inner .rtBox .result::after {content:initial !important;}
+.contents .inner .rtBox .result dl {  align-items:center; text-align:center;}
+.contents .inner .rtBox .result dl dt {font-family:'NotosansMedium'; font-size:14px; color:#fff;}
+.contents .inner .rtBox .result dl dd {font-family:'NotosansBold'; font-size:20px; color:#22ea6d;}
+/* e:contents */
+
+
+@media screen and (max-width:1580px) {
+    .contents .tabBtn {width:60%;}
+    .contents .tabBtn li a {font-size:16px;}
+    .contents .searchBox {width:25%;}
+}
+@media screen and (max-width:1480px) {
+    .contents .inner .lfBox {width:73%}
+    .contents .inner .rtBox {width:23%;}
+}
+@media screen and (max-width:1200px) {
+    .contents .scroll {overflow-x:scroll;}
+    .contents .inner {width:1500px;}
+}
